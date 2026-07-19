@@ -17,8 +17,8 @@ pipeline {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                         sh "docker push bobbykola/microservices:emailservice "
-                
-                }
+                    }
+               }
             }
         }
     }
